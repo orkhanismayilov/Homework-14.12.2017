@@ -17,20 +17,24 @@ var b2 = Number(prompt("Please, enter the capacity of second tent"));
 var b3 = Number(prompt("Please, enter the capacity of third tent"));
     console.log("Tent #3 capacity: " + b3 + " persons");
 
-if (a1<=w&&b1>=k){
-    console.log("Yes");
-}else if (a2<=w&&b2>=k){
-    console.log("Yes");
-}else if (a3<=w&&b3>=k){
-    console.log("Yes");
-}else if (a1+a2<=w&&b1+b2>=k){
-    console.log("Yes");
-}else if (a2+a3<=w&&b2+b3>=k){
-    console.log("Yes");
-}else if (a1+a3<=w&&b1+b3>=k){
-    console.log("Yes");
-}else if (a1+a2+a3<=w&&b1+b2+b3>=k){
-    console.log("Yes");
-}else{
-    console.log("No ¯\_(ツ)_/¯");
+if (k!<=0&&w!<=0&&a1!<=0&&a2!<=0&&a3!<=0&&b1!<=0&&b2!<=0&&b3!<=0){
+    if (a1<=w&&b1>=k){
+        console.log("Yes");
+    }else if (a2<=w&&b2>=k){
+        console.log("Yes");
+    }else if (a3<=w&&b3>=k){
+        console.log("Yes");
+    }else if (a1+a2<=w&&b1+b2>=k){
+        console.log("Yes");
+    }else if (a2+a3<=w&&b2+b3>=k){
+        console.log("Yes");
+    }else if (a1+a3<=w&&b1+b3>=k){
+        console.log("Yes");
+    }else if (a1+a2+a3<=w&&b1+b2+b3>=k){
+        console.log("Yes");
+    }else{
+        console.log("No ¯\_(ツ)_/¯");
+    }
+}else {
+    console.log("Entered data should be more than 0")
 }
