@@ -3,9 +3,9 @@ var a = 0;
 var b = 0;
 
 if (x>99&&x<1000){
-        var a = parseInt(x/100);
+        a = parseInt(x/100);
         console.log(a);
-        var b = x%10;
+        b = x%10;
         console.log(b);
         if (a==b){
             console.log("=");
