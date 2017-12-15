@@ -1,6 +1,6 @@
 var x = Number(prompt("Insert 3 digit number"));
 var a = 0;
-var c = 0;
+var b = 0;
 
 if (x>99&&x<1000){
         var a = parseInt(x/100);
