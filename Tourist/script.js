@@ -17,7 +17,7 @@ var b2 = Number(prompt("Please, enter the capacity of second tent"));
 var b3 = Number(prompt("Please, enter the capacity of third tent"));
     console.log("Tent #3 capacity: " + b3 + " persons");
 
-if (k!<=0&&w!<=0&&a1!<=0&&a2!<=0&&a3!<=0&&b1!<=0&&b2!<=0&&b3!<=0){
+if (k>0&&w>0&&a1>0&&a2>0&&a3>0&&b1>0&&b2>0&&b3>0){
     if (a1<=w&&b1>=k){
         console.log("Yes");
     }else if (a2<=w&&b2>=k){
